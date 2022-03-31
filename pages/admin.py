@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.utils.html import format_html
 from . import models
+
 # Register your models here.
 class TeamAdmin(admin.ModelAdmin):
     def thambnail(self, object):
