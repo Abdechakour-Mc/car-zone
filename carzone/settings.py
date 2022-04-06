@@ -33,6 +33,10 @@ LOGIN_REDIRECT_URL = 'dashboard'
 # Application definition
 
 INSTALLED_APPS = [
+    'pages.apps.PagesConfig',
+    'cars.apps.CarsConfig',
+    'accounts.apps.AccountsConfig',
+    'contacts.apps.ContactsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,9 +45,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     'ckeditor',
-    'pages.apps.PagesConfig',
-    'cars.apps.CarsConfig',
-    'accounts.apps.AccountsConfig',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
@@ -153,3 +154,10 @@ MESSAGE_TAGS = {
 }
 
 SITE_ID = 1
+
+# Email sending
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'abdechakourmechri2@gmail.com'
+EMAIL_HOST_PASSWORD = '####'
+EMAIL_USE_TLS = True
