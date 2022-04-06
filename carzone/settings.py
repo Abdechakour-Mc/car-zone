@@ -26,7 +26,7 @@ SECRET_KEY = 'c2i8_i^v^@9k=7cos=hq6)wp^k+v8dw+@f$4ohgswgeuq3!bj3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['stormy-fjord-51090.herokuapp.com',]
 
 LOGIN_REDIRECT_URL = 'dashboard'
 
